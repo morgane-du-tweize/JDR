@@ -1,6 +1,11 @@
 package rebuildJDR;
 
-public class Personnage {
+public abstract class Personnage {
+
+	@Override
+	public String toString() {
+		return "Personnage [nom=" + nom + ", force=" + force + ", niveau=" + niveau + ", maxHealth=" + maxHealth + "]";
+	}
 
 	private String nom ;
 	private int force ;
@@ -63,4 +68,6 @@ public class Personnage {
 		int puissance = this.force / 4 ;
 		autrePerso.degats(puissance);
 	}
+
+	public abstract void wololo();
 }

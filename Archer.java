@@ -12,9 +12,18 @@ public class Archer extends Personnage {
 		tirer(autrePerso);
 	} 
 
+	@Override
+	public String toString() {
+		return super.toString() + " classe: Archer" ;
+	}
+
 	public void tirer(Personnage autrePerso) {
 		System.out.println(getNom() + " tire une flèche sur " + autrePerso.getNom());
 		autrePerso.degats(8);
+	}
+	
+	public void wololo() {
+		System.out.println("Wololooooooo");
 	}
 	
 }

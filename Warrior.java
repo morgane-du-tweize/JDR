@@ -2,6 +2,11 @@ package rebuildJDR;
 
 public class Warrior extends Personnage{
 
+	@Override
+	public String toString() {
+		return super.toString() + " classe : Warrior";
+	}
+
 	public Warrior(String nom, int force, int niveau) throws CharacterException {
 		super(nom, force, niveau);
 	}
@@ -16,5 +21,8 @@ public class Warrior extends Personnage{
 		autrePerso.degats(12);
 	}
 	
+	public void wololo() {
+		System.out.println("Wololooooooo");
+	}
 
 }
